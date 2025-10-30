@@ -1,0 +1,169 @@
+
+
+/* -- Configurações Iniciais -- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* -- Estilo Geral -- */
+
+body {
+    background-color: #0d0d0d;
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 2rem;
+
+}
+
+h1, h2, h3, h4 {
+    color: #fff;
+}
+
+a {
+    color: #00bfff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #66ccff;
+}
+
+
+/* -- Header-- */
+header {
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #999;
+    margin-top: 0.rem;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #00bfff;
+}
+
+/* --- Seções -- */
+
+section {
+    width: 100%;
+    max-width: 800px;
+    background: #141414;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+section h3{
+    border-left: 4px solid #00bfff;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+
+
+/* -- Projetos -- */
+
+.projetos {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projeto:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+}
+
+
+/* -- Habilidades -- */
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+li {
+    background: #222;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+
+/* -- Contato -- */
+
+#contato p {
+    margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 600px) {
+
+header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+}
+
+.header-text h2 {
+    font-size: 1rem;
+}
+
+body {
+    padding: 1rem;
+}
+
+section {
+    padding: 1.2rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+ul {
+    flex-direction: column;
+    align-items: start;
+}
+
+li {
+    width: 100%;
+}
+
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bernardo Lôbo — Desenvolvedor Full Stack (Em formação)</title>
+  <meta name="description" content="Portfólio de Bernardo Lôbo — projetos, GitHub, contato." />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#0f1720; --muted:#9aa6b2; --accent:#7c5cff; --glass: rgba(255,255,255,0.04);
+      --radius:12px; --mono: 'Segoe UI Mono', 'Roboto Mono', monospace;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#071017);color:#e6eef6;font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.45}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#4cc9f0);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:var(--mono);font-size:28px;color:#071017}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:6px}
+
+    nav{margin-top:18px;display:flex;gap:8px}
+    .btn{background:var(--glass);padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--muted);font-weight:600}
+    .accent{background:linear-gradient(90deg,var(--accent),#4cc9f0);color:#071017}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:22px}
+    .card{background:linear-gradient(180deg,var(--card),#071322);padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+
+    .projects{display:grid;grid-template-columns:repeat(1,1fr);gap:12px}
+    .project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    .project h3{margin:0 0 6px 0}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;color:var(--muted)}
+
+    aside .mini{font-size:13px;color:var(--muted);margin-bottom:12px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:980px){.grid{grid-template-columns:1fr}.avatar{width:80px;height:80px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">BL</div>
+      <div>
+        <h1>Bernardo Lôbo</h1>
+        <div class="lead">Estudante de Ciência da Computação • Desenvolvedor Full Stack em formação</div>
+        <nav>
+          <a class="btn" href="#projetos">Projetos</a>
+          <a class="btn" href="#sobre">Sobre</a>
+          <a class="btn" href="#contato">Contato</a>
+          <a class="btn accent" href="#cv">Download CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section>
+        <div class="card" id="sobre">
+          <h2>Sobre mim</h2>
+          <p class="mini" style="color:var(--muted)">Sou estudante de Ciência da Computação com background em Engenharia Mecânica. Apaixonado por desenvolvimento web, automação e por criar ferramentas que resolvem problemas reais. Busco oportunidades de estágio ou junior em desenvolvimento Full Stack.</p>
+          <p style="margin-top:12px">Principais skills:</p>
+          <div class="tags" style="margin-top:8px">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Python</span>
+            <span class="tag">Flask / FastAPI</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="card" id="projetos" style="margin-top:18px">
+          <h2>Projetos</h2>
+          <div class="projects">
+            <article class="project">
+              <h3>Portfolio - Site pessoal</h3>
+              <div class="mini">Uma página estática hospedada no GitHub Pages/Vercel com meus projetos e contato.</div>
+              <div style="margin-top:8px" class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
+            </article>
+
+            <article class="project">
+              <h3>Clone (Netflix / Steam)</h3>
+              <div class="mini">Clone visual com responsividade e layout. Boa peça para mostrar CSS e atenção ao detalhe.</div>
+              <div style="margin-top:8px" class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+            </article>
+
+            <article class="project">
+              <h3>ToDo App (React)</h3>
+              <div class="mini">Lista de tarefas com localStorage e filtros — demonstra estado e componentes.</div>
+              <div style="margin-top:8px" class="tags"><span class="tag">React</span><span class="tag">JS</span></div>
+            </article>
+
+            <article class="project">
+              <h3>API (Flask) + CRUD</h3>
+              <div class="mini">API simples com autenticação, CRUD e integração com front React.</div>
+              <div style="margin-top:8px" class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQL</span></div>
+            </article>
+
+            <article class="project">
+              <h3>GameHub Tracker</h3>
+              <div class="mini">Projeto Full Stack: front React + back Flask + banco. Deploy em Vercel + Render.</div>
+              <div style="margin-top:8px" class="tags"><span class="tag">Full Stack</span><span class="tag">Deploy</span></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px" id="cv">
+          <h2>Currículo</h2>
+          <p class="mini">Resumo rápido do CV:</p>
+          <ul style="margin-top:8px;color:var(--muted)">
+            <li><strong>Formação:</strong> Eng. Mecânica (em finalização) • Ciência da Computação (em andamento)</li>
+            <li><strong>Experiência:</strong> Estágio atual (engenharia) — trabalho em equipe, resolução de problemas</li>
+            <li><strong>Contato:</strong> email@exemplo.com • GitHub: github.com/bernardolobo</li>
+          </ul>
+          <p style="margin-top:10px;color:var(--muted)">Dica: coloque link direto para repositórios dos projetos citados.</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Contato</h3>
+          <div class="mini">Email</div>
+          <div style="margin-bottom:8px">email@exemplo.com</div>
+          <div class="mini">LinkedIn</div>
+          <a class="btn" href="https://linkedin.com/in/bernardolobo">linkedin.com/in/bernardolobo</a>
+          <div style="height:12px"></div>
+          <div class="mini">GitHub</div>
+          <a class="btn" href="https://github.com/bernardolobo">github.com/bernardolobo</a>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Disponibilidade</h3>
+          <p class="mini">Buscando estágio ou vaga júnior. Disponível para início em fevereiro/2025.</p>
+          <h4 style="margin-top:10px">Habilidades em andamento</h4>
+          <div class="tags" style="margin-top:8px"><span class="tag">React</span><span class="tag">Python</span><span class="tag">SQL</span></div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Dicas rápidas</h3>
+          <ol style="color:var(--muted);font-size:13px;padding-left:14px">
+            <li>Mantenha README's claros e com prints.</li>
+            <li>Cada projeto com "Como rodar" pronto.</li>
+            <li>Faça 1 post semanal no LinkedIn mostrando progresso.</li>
+          </ol>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Feito por <strong>Bernardo Lôbo</strong> • Template base gerado por assistente</div>
+    </footer>
+  </div>
+
+  <!--
+    INSTRUÇÕES RÁPIDAS:
+    1) Substitua `email@exemplo.com` e os links por seus dados reais.
+    2) Para hospedar rápido: crie repo `bernardolobo.github.io` e envie esse arquivo -> GitHub Pages
+    3) Para deploy com frontend separado: use Vercel (direto do repositório).
+    4) Melhore com imagens/screenshots e GIFs dos seus projetos.
+  -->
+</body>
+</html>
